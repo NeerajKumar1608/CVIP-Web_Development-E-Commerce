@@ -1,0 +1,156 @@
+html {
+    scroll-behavior: smooth;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kantumruy Pro', sans-serif;
+    background: radial-gradient(#ffffff,#ffd6d6);    
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+.nav{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+    font-weight: bold ;
+    font-size: large;   
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+nav ul li :hover{
+    color: rgb(207, 91, 91);
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: #555;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col2 img{
+    max-width: 100%;
+    padding: 0px 0px;
+}
+.col2 h1{
+    font-size: 50px;
+    line-height: 50px;
+    margin: 25px 0px;
+}
+.header .row{
+    margin-top: 70px;
+}
+.nav input[type=text] {
+    float: right;
+    padding-top: 50px;
+    padding: 6px;
+    padding-bottom: 2px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    background: radial-gradient(#fff,#c96f6f9e);
+    border-radius: 10px;
+    border: 5px;
+}
+.nav h3:hover {
+    color: rgb(207, 91, 91);
+}
+.categories h1{
+    color: rgb(73, 148, 123);
+    margin-right: 40%;
+    margin-left: 40%;
+    padding-bottom: 35px;
+    text-decoration: underline;
+}
+.categories{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+    margin-top: 50px;
+    align-items: center;
+}
+.image{
+    padding-left: 60px;
+    padding-right: 60px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 50px;
+    transition: transform .2s;
+    padding-top: 25px;
+}
+
+.image:hover{
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1);
+}
+.image img{
+    width: 440px;
+    height: 320px;
+    border-radius:20px;
+    border: 2.3px solid rgb(247, 198, 198);
+    /* border-radius: 50px; */
+}
+.image h2{
+    padding-top: 12px;
+    text-align: center;
+}
+.image h2:hover{ 
+    color: coral;
+} 
+#myBtn {
+    position: fixed;
+    bottom: 60px;
+    right: 50px;
+    z-index: 99;
+    cursor: pointer;
+    padding: 5px;
+    border: 1.7px solid rgb(40, 40, 40);
+    border-radius: 15px;
+    background: #ffd6d6;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #ffd6d6,
+                -6px -6px 12px #ffd6d6;
+  }
+  #myBtn:hover{
+    box-shadow:  6px 6px 12px #f11616,
+                -6px -6px 12px #48b4ea;
+
+  }
+  #myBtn img{
+    height: 40px; 
+  }
